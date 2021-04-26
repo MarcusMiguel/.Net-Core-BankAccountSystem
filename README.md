@@ -14,7 +14,9 @@
         senha: Password
      User1
         email: user1@email
+        senha: Password
      User2
         email2: user2@email
+        senha: Password
 
 

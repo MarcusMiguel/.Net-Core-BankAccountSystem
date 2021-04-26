@@ -1,0 +1,64 @@
+﻿@section Styles  {
+    <link rel="stylesheet" href="~/css/UserPage.css" />
+}
+
+@{
+    ViewData["Title"] = "UserPage";
+}
+<div class="container justify-content-center d-flex ">
+    <div>
+        <menu class="menu">
+            <button class="menu__item active accountButton" style="--bgColorItem: #ff8c00;">
+                <i class="fa fa-bars text-white">  Sua conta</i>
+            </button>
+
+            <button class="menu__item transferButton" style="--bgColorItem: #f54888;">
+                <i class="fa fa-exchange text-white">  Transferir</i>
+            </button>
+
+            <button class="menu__item withdrawButton" style="--bgColorItem: #4343f5;">
+                <i class="fa fa-money text-white">  Sacar</i>
+            </button>
+
+            <button class="menu__item depositButton" style="--bgColorItem: #e0b115;">
+                <i class="fa fa-plus-circle text-white">  Depositar</i>
+            </button>
+            <div class="menu__border"></div>
+        </menu>
+
+        <div class="svg-container">
+            <svg viewBox="0 0 202.9 45.5">
+                <clipPath id="menu" clipPathUnits="objectBoundingBox" transform="scale(0.0049285362247413 0.021978021978022)">
+                    <path d="M6.7,45.5c5.7,0.1,14.1-0.4,23.3-4c5.7-2.3,9.9-5,18.1-10.5c10.7-7.1,11.8-9.2,20.6-14.3c5-2.9,9.2-5.2,15.2-7
+          c7.1-2.1,13.3-2.3,17.6-2.1c4.2-0.2,10.5,0.1,17.6,2.1c6.1,1.8,10.2,4.1,15.2,7c8.8,5,9.9,7.1,20.6,14.3c8.3,5.5,12.4,8.2,18.1,10.5
+          c9.2,3.6,17.6,4.2,23.3,4H6.7z" />
+                </clipPath>
+            </svg>
+        </div>
+        <div class="card" id="accountCard">
+            <div class="card-bottom pt-3 px-3 mb-3 pb-3 ">
+                <div class="text-align-center offset-1">
+                    <div class="d-flex flex-column pb-3 mt-5">
+                        <span>Tipo da Conta</span>
+                        <p><span class="text-white">@Model.TipoConta</span></p>
+                    </div>
+                    <div class="d-flex flex-column pb-3">
+                        <span>Saldo</span>
+                        <p>R$ <span class="text-white">@Model.Saldo</span></p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between text-align-center">
+                        <div class="d-flex flex-column pb-3">
+                            <span>Crédito</span>
+                            <p>R$ <span class="text-white">@Model.Credito</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card">
+        </div>
+    </div>
+
+</div>
+
+

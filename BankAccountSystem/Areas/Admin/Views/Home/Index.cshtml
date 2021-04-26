@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<div class="container row p-0 m-0">
+    <div class="col-9">
+        <h2 class="text-info">Lista de Contas</h2>
+    </div>
+    <div class="col-12 border p-3 mt-3" id="mydiv">
+        @if (Model.Count > 0)
+        {
+            <table class="table table-striped border">
+                <tr class="table-secondary">
+                    <th>
+                    </th>
+                    <th>
+                        <label>UserName</label>
+                    </th>
+                    <th>
+                        <label>Email</label>
+                    </th>
+                    <th>
+                        <label>Número da Conta</label>
+                    </th>
+                    <th>
+                        <label>Tipo da Conta</label>
+                    </th>
+                    <th>
+                        <label>Saldo</label>
+                    </th>
+                    <th>
+                        <label>Crédito</label>
+                    </th>
+                    <th>
+                    </th>
+                </tr>
+                @foreach (var item in Model)
+                {
+            <tr>
+                <td>
+                </td>
+                <td>
+                    @item.UserName
+                </td>
+                <td>
+                    @item.Email
+                </td>
+                <td>
+                    @item.NumeroConta
+                </td>
+                <td>
+                    @item.TipoConta
+                </td>
+                <td>
+                    @item.Saldo
+                </td>
+                <td>
+                    @item.Credito
+                </td>
+                <td>
+                    @if (item.Bloqueado == false)
+                    {
+                        <a onclick="return block_unblock( '@item.Email' )" class="btn btn-danger btn-sm b1">  <i class="delete fa fa-unlock fa-2x"></i></a>
+                    }
+                    else
+                    {
+                        <a onclick="return block_unblock('@item.Email')" class="btn btn-danger btn-sm b1">  <i class="delete fa fa-lock fa-2x"></i></a>
+                    }
+                </td>
+            </tr>
+                }
+            </table>
+        }
+        else
+        {
+            <p>Nenhuma conta disponível.</p>
+        }
+    </div>
+    <a data-value="null" class="float btnModal ">
+        <i class="fa fa-plus my-float "></i>
+    </a>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+            </div>
+            <div class="modal-body ">
+                <div id="teste"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,79 @@
+﻿@model BankAccountSystem.Models.SignUp
+@using BankAccountSystem
+@using BankAccountSystem.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="SignUp" onsubmit="return jQueryAjaxPost(this);" id="form">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group row justify-content-center">
+                <div class="col-3">
+                    <label asp-for="UserName"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="UserName" class="form-control"> </>
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <div class="col-3">
+                    <label asp-for="Email"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="Email" class="form-control"> </>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <div class="col-3">
+                    <label asp-for="Password"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="Password" class="form-control"> </>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <div class="col-3">
+                    <label asp-for="TipoConta"></label>
+                </div>
+                <div class="col-6">
+                    <select asp-for="TipoConta" class="form-control" id="FormControlSelect">
+                        <option>Pessoa_Física</option>
+                        <option>Pessoa_Jurídica</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <div class="col-3">
+                    <label asp-for="Saldo"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="Saldo" class="form-control" />
+                    <span asp-validation-for="Saldo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <div class="col-3">
+                    <label asp-for="Credito">Credito</label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="Credito" class="form-control" />
+                    <span asp-validation-for="Credito" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <div class="col-3 offset-3">
+                    <button type="submit" class="btn btn-success form-control">
+                        Adicionar
+                    </button>
+                </div>
+                <div class="col-3">
+                    <a asp-action="Index" asp-controller="Home" class="btn btn-danger form-control">Cancelar</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

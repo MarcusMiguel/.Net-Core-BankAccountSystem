@@ -1,0 +1,23 @@
+﻿@model BankAccountSystem.Models.Withdraw
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = null;
+}
+<div class="card" id="withdrawCard">
+    <div class="card-bottom pt-3 px-3 mb-3 pb-3 ">
+        <div class="text-align-center offset-1">
+            <form onsubmit="return jQueryAjaxWithdrawPost(this);" id="form">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group  d-flex flex-column pb-3">
+                    <label asp-for="Amount">Valor</label>
+                    <input asp-for="Amount" class="form-styling form-control" type="number" name="Amount" placeholder="" />
+                    <span asp-validation-for="Amount"></span>
+                </div>
+                <div class="form-group offset-9">
+                    <input type="submit" value="Confirmar" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

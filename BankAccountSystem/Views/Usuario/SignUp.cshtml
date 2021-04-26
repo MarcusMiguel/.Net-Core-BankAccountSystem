@@ -1,0 +1,68 @@
+﻿@model BankAccountSystem.Models.SignUpModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+</head>
+<body>
+    <div class="container">
+        <h4 class="display-4">Registrar</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4 offset-4">
+                <form asp-action="SignUp">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="UserName" class="control-label"></label>
+                        <input asp-for="UserName" class="form-control" />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password" class="control-label"></label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TipoConta" class="control-label"></label>
+                        <input asp-for="TipoConta" class="form-control" />
+                        <span asp-validation-for="TipoConta" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Saldo" class="control-label"></label>
+                        <input asp-for="Saldo" class="form-control" />
+                        <span asp-validation-for="Saldo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Credito" class="control-label"></label>
+                        <input asp-for="Credito" class="form-control" />
+                        <span asp-validation-for="Credito" class="text-danger"></span>
+                    </div>
+                    <div class="form-group offset-9">
+                        <input type="submit" value="Registrar" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4 offset-5">
+            <p>Clique <a asp-action="SignIn" asp-controller="Usuario">aqui</a> para entrar.</p>
+        </div>
+        <div>
+        </div>
+
+    </div>
+</body>
+</html>

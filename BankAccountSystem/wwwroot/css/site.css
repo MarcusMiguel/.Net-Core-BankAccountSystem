@@ -1,0 +1,147 @@
+﻿*{
+    font-size: 20px;
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  margin-left: -30px;
+  font-size: 20px;
+}
+
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+html {
+  font-size: 14px;
+}
+
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: gray;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+    margin-top: 22px;
+    color: white;
+}
+
+.card {
+    border: none;
+    border-radius:0px;
+    width: 800px;
+    background-color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.text-dark {
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 30px;
+    letter-spacing: 0.5px
+}
+
+.card-bottom {
+    background: #3E454D;
+    border-radius: 6px;
+  height: 450px;
+  margin-bottom: 0px !important;
+}
+
+.flex-column {
+    color: #adb5bd;
+    font-size: 13px;
+    font-size: 30px;
+}
+
+.flex-column p {
+    letter-spacing: 1px;
+    font-size: 18px
+}
+
+.btn-secondary {
+    height: 40px !important;
+    margin-top: 3px
+}
+
+.btn-secondary:focus {
+    box-shadow: none
+}
+
+.form-styling {
+    width: 90%;
+    height: 35px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.logout{
+    margin-right: -35px;
+}
+
+
+@media (max-width: 600px) {
+    a.navbar-brand {
+        margin-left: 30px !important;
+    }
+}

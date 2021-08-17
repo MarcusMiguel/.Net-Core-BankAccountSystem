@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7RGTndS4SCsx+oI2IFL1YIOaI2bHAbi/rrMU5AD/1gzAxGxutN5LVtgprbxMC1s9qFe+YslIPCvYpOLXyPaOLw==",
+  "dgSpecHash": "FhuUe7w5ByD01SRvt2shyFku8BRBUul2Pa/g0rSowhpgEM1KTSmxu6NtOHntG5kOIhrp6GQ+wVHB0GC5tFtqMA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marcu\\source\\repos\\BankAccountSystem\\BankAccountSystem\\BankAccountSystem.csproj",
+  "projectFilePath": "C:\\Users\\marcu\\Downloads\\bank-account\\.Net-Core-BankAccountSystem\\BankAccountSystem\\BankAccountSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marcu\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
     "C:\\Users\\marcu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
